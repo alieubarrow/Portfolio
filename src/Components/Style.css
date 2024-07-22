@@ -1,0 +1,24 @@
+.topnav {
+    float: right;
+    padding: 10px 100px;
+    font-size: 25px;    
+  }
+
+  ul li{
+    display: inline-block;  
+    margin: 10px;
+  }
+
+  .topnav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo {
+    position: absolute;
+    top: -120px;
+    left: 0px;
+  }
+
+
+  
