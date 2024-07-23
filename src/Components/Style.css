@@ -20,5 +20,54 @@
     left: 0px;
   }
 
+  .binary {
+    position: absolute;
+    top: 200px;
+    left: 500px;
+  }
+
+  .intro {
+    color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+  }
+
+  .textBox {
+    border: 1px solid;
+    border-radius: 10px;
+    height: 220px;
+    width: 700px;
+    background-color: gray;
+    position: absolute;
+    top: 400px;
+    left: 125px;
+    background-color: darkgray;
+  }
+
+  .innerBox {
+    border: 1px solid;
+    border-radius: 10px;
+    height: 60px;
+    width: 675px;
+    position: absolute;
+    padding-bottom: 5px;
+    margin-left: 10px;
+  }
+
+  .footNote {
+    color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+  }
+
+  .header {
+    position: absolute;
+    color: whitesmoke;
+    top: 300px;
+    left: 125px;
+  }
+
 
   
