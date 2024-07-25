@@ -20,10 +20,10 @@
     left: 0px;
   }
 
-  .binary {
+  .computer {
     position: absolute;
-    top: 200px;
-    left: 500px;
+    top: 195px;
+    left: 1000px;
   }
 
   .intro {
@@ -42,7 +42,7 @@
     position: absolute;
     top: 400px;
     left: 125px;
-    background-color: darkgray;
+    background-color: gray;
   }
 
   .innerBox {
@@ -67,6 +67,40 @@
     color: whitesmoke;
     top: 300px;
     left: 125px;
+  }
+
+  .hire {
+    position: absolute;
+    top: 630px;
+    left: 125px;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 40px;
+    width: 125px;
+    background-color: gray;
+  }
+
+  .hireMe {
+    color: whitesmoke;
+    padding-left: 20px;
+    font-size: 18px;
+  }
+
+  .lights {
+    position: absolute;
+    top: 630px;
+    left: 1250px;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 35px;
+    width: 150px;
+    background-color: gray;
+  }
+
+  .turnOnLights {
+    color: whitesmoke;
+    font-size: 16px;
+    padding-left: 10px;
   }
 
 

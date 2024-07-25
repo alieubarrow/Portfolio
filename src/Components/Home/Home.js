@@ -8,7 +8,7 @@ export default function Home() {
             <img className= "logo" src="/Images/Logo.png" alt="Logo"></img>
         </div>
         <div className="gif">
-            <img className="binary" src="" alt="Numbers"></img>
+            <img className="computer" src="/Images/Laptop.jpg" alt="Computer"></img>
         </div>
         <nav className="topnav">
            <ul>
@@ -36,6 +36,12 @@ export default function Home() {
                     Some species live in houses where they hunt.
                 </p>
             </div>
+        </div>
+        <div className="hire">
+            <p className="hireMe"> Hire Me</p>
+        </div>
+        <div className="lights">
+            <p className="turnOnLights">Turn On Light</p>
         </div>
       </div>
     );
