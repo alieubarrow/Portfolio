@@ -1,8 +1,12 @@
 import "../Style.css" 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAnchor, faPowerOff, faUserGraduate, faAward } from '@fortawesome/free-solid-svg-icons'
+
+
 
 export default function Home() {
     return (
-
+    <>
       <div className="Home">
         <div className="image">
             <img className= "logo" src="/Images/Logo.png" alt="Logo"></img>
@@ -32,17 +36,32 @@ export default function Home() {
             </p>
             <div className="innerBox">
                 <p className="footNote">
-                    Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent test except Antarctica in.
+                    Geckos are a group of usually small, usually nocturnal lizards. They are found on every in continent test except Antarctica in.
                     Some species live in houses where they hunt.
                 </p>
             </div>
         </div>
         <div className="hire">
-            <p className="hireMe"> Hire Me</p>
+            <p className="hireMe">Hire Me</p>
+            <FontAwesomeIcon icon={faAnchor} size="sm" style={{color: "#c0c0c0",}} />
         </div>
         <div className="lights">
             <p className="turnOnLights">Turn On Light</p>
+            <FontAwesomeIcon icon={faPowerOff} size="sm" style={{color: "#c0c0c0",}} />
+        </div>
+        <div className="aboutMe">
+            <p className="me">ABOUT ME</p>
         </div>
       </div>
+      <div className="ed">
+            <p className="education">Education</p>
+            <FontAwesomeIcon icon={faUserGraduate} size="sm" style={{color: "#c0c0c0",}}/>
+      </div>
+      <div className="exp">
+            <p className="experience">Experience</p> 
+            <FontAwesomeIcon icon={faAward} size="sm" style={{color: "#c0c0c0",}} />
+      </div>  
+
+    </>
     );
   }
