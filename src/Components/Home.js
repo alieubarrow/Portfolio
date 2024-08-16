@@ -1,8 +1,6 @@
-import "../Style.css" 
+import "../Styles/HomeStyle.css" 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnchor, faPowerOff, faUserGraduate, faAward } from '@fortawesome/free-solid-svg-icons'
-
-
 
 export default function Home() {
     return (
@@ -61,7 +59,45 @@ export default function Home() {
             <p className="experience">Experience</p> 
             <FontAwesomeIcon icon={faAward} size="sm" style={{color: "#c0c0c0",}} />
       </div>  
-
+      <section className="expSec">
+        <div className="headerDiv"> 
+            <hr/>
+            <h1 className="expHeader">Experience</h1>
+            <h4 className="expHeader">Work/Freelance</h4>
+        </div>
+        <div className="expDiv">
+            <div className="expOne">
+                <h2 className="headerTwo">Microsoft</h2>
+                <h5 className="headerThree">2001 - 2005</h5>
+                <p className="paraG">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div className="expTwo">
+                <h2 className="headerTwo">Google</h2>
+                <h5 className="headerThree">2005 - 2010</h5>
+                <p className="paraG">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div className="expThree">
+                <h2 className="headerTwo">Nvidia</h2>
+                <h5 className="headerThree">2010 - 2015</h5>
+                <p className="paraG">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+      </section>
     </>
     );
   }

@@ -1,3 +1,7 @@
+body {
+  background-color: black;
+}
+
 .topnav {
     float: right;
     padding: 10px 100px;
@@ -176,4 +180,83 @@
     font-size: 20px;
     padding-right: 5px;
   }
+
+  .expSec {
+    position: absolute;
+    top: 900px;
+    left: 250px;
+    background-color: black;
+    color: whitesmoke;
+    height: 445px;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 20px;
+  }
+
+  .expDiv {
+    padding: 20px;
+    height: 400px;
+  }
   
+  .expOne::before {
+    content: " ";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: 874px;
+    top: 25px;
+    background-color: white;
+    border: 2px solid gray;
+  }
+
+  .expTwo::before {
+    content: " ";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: 874px;
+    top: 170px;
+    background-color: white;
+    border: 2px solid gray;
+  }
+
+  .expThree::before {
+    content: " ";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: 874px;
+    top:315px;
+    background-color: white;
+    border: 2px solid grey;
+  }
+
+  .headerTwo, .headerThree {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .paraG {
+    margin-top: 10px;
+  }
+
+  .headerDiv {
+  }
+
+  .expHeader {
+    margin-left: 95px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  hr {
+    height: 12px;
+    background-color: white;
+    border-radius: 15px;
+    width: 100px;
+    margin-top: 30px;
+  }
