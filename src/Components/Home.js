@@ -1,103 +1,136 @@
-import "../Styles/HomeStyle.css" 
+import "../Styles/HomeStyle.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAnchor, faPowerOff, faUserGraduate, faAward } from '@fortawesome/free-solid-svg-icons'
+import {
+  faArrowRight,
+  faAward,
+  faBriefcase,
+  faCode,
+  faEnvelope,
+  faUserGraduate,
+} from "@fortawesome/free-solid-svg-icons";
+import { Link, NavLink } from "react-router-dom";
+import { experience, highlights, navItems, projects, skills } from "../portfolioData";
 
 export default function Home() {
-    return (
-    <>
-      <div className="Home">
-        <div className="image">
-            <img className= "logo" src="/Images/Logo.png" alt="Logo"></img>
-        </div>
-        <div className="gif">
-            <img className="computer" src="/Images/Laptop.jpg" alt="Computer"></img>
-        </div>
-        <nav className="topnav">
-           <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="#projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+  return (
+    <div className="Home">
+      <header className="homeHeader">
+        <Link className="homeBrand" to="/">
+          <img className="logo" src="/Images/Logo.png" alt="Alieu Barrow logo" />
+          <span>Alieu Barrow</span>
+        </Link>
+        <nav className="topnav" aria-label="Primary navigation">
+          {navItems.map((item) => (
+            <NavLink key={item.path} to={item.path}>
+              {item.label}
+            </NavLink>
+          ))}
         </nav>
-        <div className="header">
-            <h3>Hi, my name is Alieu Barrow</h3>
-            <h2>I love buildning software applications</h2>
-        </div>
-        <div className="textBox">
-            <p className="intro">
-                Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Antarctica.
-                Some species live in houses where they hunt insects attracted by artificial light.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      </header>
+
+      <main>
+        <section className="heroSection">
+          <div className="heroCopy">
+            <p className="eyebrow">Software Developer</p>
+            <h1>Hi, I am Alieu Barrow.</h1>
+            <p className="heroLead">
+              I build thoughtful web experiences with React, JavaScript, and a
+              steady focus on clean user flows.
             </p>
-            <div className="innerBox">
-                <p className="footNote">
-                    Geckos are a group of usually small, usually nocturnal lizards. They are found on every in continent test except Antarctica in.
-                    Some species live in houses where they hunt.
-                </p>
+            <div className="heroActions">
+              <Link className="primaryAction" to="/projects">
+                View Projects
+                <FontAwesomeIcon icon={faArrowRight} />
+              </Link>
+              <Link className="secondaryAction" to="/contact">
+                Contact Me
+                <FontAwesomeIcon icon={faEnvelope} />
+              </Link>
             </div>
-        </div>
-        <div className="hire">
-            <p className="hireMe">Hire Me</p>
-            <FontAwesomeIcon icon={faAnchor} size="sm" style={{color: "#c0c0c0",}} />
-        </div>
-        <div className="lights">
-            <p className="turnOnLights">Turn On Light</p>
-            <FontAwesomeIcon icon={faPowerOff} size="sm" style={{color: "#c0c0c0",}} />
-        </div>
-        <div className="aboutMe">
-            <p className="me">ABOUT ME</p>
-        </div>
-      </div>
-      <div className="ed">
-            <p className="education">Education</p>
-            <FontAwesomeIcon icon={faUserGraduate} size="sm" style={{color: "#c0c0c0",}}/>
-      </div>
-      <div className="exp">
-            <p className="experience">Experience</p> 
-            <FontAwesomeIcon icon={faAward} size="sm" style={{color: "#c0c0c0",}} />
-      </div>  
-      <section className="expSec">
-        <div className="headerDiv"> 
-            <hr/>
-            <h1 className="expHeader">Experience</h1>
-            <h4 className="expHeader">Work/Freelance</h4>
-        </div>
-        <div className="expDiv">
-            <div className="expOne">
-                <h2 className="headerTwo">Microsoft</h2>
-                <h5 className="headerThree">2001 - 2005</h5>
-                <p className="paraG">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+          </div>
+
+          <div className="heroVisual" aria-label="Laptop workspace">
+            <img className="computer" src="/Images/Laptop.jpg" alt="Laptop on a work desk" />
+          </div>
+        </section>
+
+        <section className="quickFacts" aria-label="Portfolio highlights">
+          {highlights.map((highlight) => (
+            <article className="factCard" key={highlight}>
+              <FontAwesomeIcon icon={faCode} />
+              <p>{highlight}</p>
+            </article>
+          ))}
+        </section>
+
+        <section className="aboutPreview">
+          <div>
+            <p className="eyebrow">About Me</p>
+            <h2>Learning deeply, building consistently.</h2>
+          </div>
+          <p>
+            I am growing as a developer by turning coursework, experiments, and
+            personal ideas into complete interfaces. My goal is to make software
+            that is clear, useful, and reliable for the people using it.
+          </p>
+        </section>
+
+        <section className="splitSection">
+          <div className="sectionHeading">
+            <p className="eyebrow">Projects</p>
+            <h2>Recent Work</h2>
+          </div>
+          <div className="projectGrid">
+            {projects.map((project) => (
+              <article className="projectTile" key={project.title}>
+                <span>{project.type}</span>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="splitSection twoColumn">
+          <div>
+            <p className="eyebrow">Skills</p>
+            <h2>Tools I use to build.</h2>
+            <ul className="homeSkillList">
+              {skills.map((skill) => (
+                <li key={skill}>{skill}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <p className="eyebrow">Experience</p>
+            <h2>What I am practicing.</h2>
+            <div className="timeline">
+              {experience.map((item) => (
+                <article className="timelineItem" key={item.role}>
+                  <FontAwesomeIcon icon={item.role.includes("Coursework") ? faUserGraduate : faAward} />
+                  <div>
+                    <h3>{item.role}</h3>
+                    <span>{item.dates}</span>
+                    <p>{item.details}</p>
+                  </div>
+                </article>
+              ))}
             </div>
-            <div className="expTwo">
-                <h2 className="headerTwo">Google</h2>
-                <h5 className="headerThree">2005 - 2010</h5>
-                <p className="paraG">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-            <div className="expThree">
-                <h2 className="headerTwo">Nvidia</h2>
-                <h5 className="headerThree">2010 - 2015</h5>
-                <p className="paraG">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-        </div>
-      </section>
-    </>
-    );
-  }
+          </div>
+        </section>
+
+        <section className="contactBanner">
+          <div>
+            <p className="eyebrow">Available For Projects</p>
+            <h2>Have an idea worth building?</h2>
+          </div>
+          <Link className="primaryAction" to="/contact">
+            Hire Me
+            <FontAwesomeIcon icon={faBriefcase} />
+          </Link>
+        </section>
+      </main>
+    </div>
+  );
+}

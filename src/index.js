@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Home from "./Components/Home";
 import Projects from './Components/Projects';
 import Skills from './Components/Skills';
 import Contact from './Components/Contact';
 import About from './Components/About';
 
-const rout = createBrowserRouter([{
+const rout = createHashRouter([{
   path: "/",
   element: <Home/>,
 },
@@ -34,5 +34,4 @@ root.render(
       <RouterProvider router={rout} />
   </React.StrictMode>
 );
-
 
