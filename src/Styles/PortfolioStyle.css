@@ -124,6 +124,20 @@
   text-transform: uppercase;
 }
 
+.projectLink {
+  align-items: center;
+  color: #68d8bd;
+  display: inline-flex;
+  font-weight: 800;
+  gap: 8px;
+  margin-top: 18px;
+  text-decoration: none;
+}
+
+.projectLink:hover {
+  color: #ffffff;
+}
+
 .skillList {
   display: flex;
   flex-wrap: wrap;

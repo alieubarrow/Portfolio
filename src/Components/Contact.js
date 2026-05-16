@@ -30,7 +30,7 @@ export default function Contact() {
             I am open to project conversations, collaboration, and opportunities
             to keep improving as a software developer.
           </p>
-          <a className="contactButton" href="mailto:alieubarrow@example.com">
+          <a className="contactButton" href="mailto:alieubarrow25@yahoo.com">
             Send Email
           </a>
         </section>

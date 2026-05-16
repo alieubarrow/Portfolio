@@ -1,4 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/PortfolioStyle.css";
 import { navItems, projects } from "../portfolioData";
 
@@ -35,6 +37,12 @@ export default function Projects() {
               <span className="projectType">{project.type}</span>
               <h2>{project.title}</h2>
               <p>{project.description}</p>
+              {project.liveUrl && (
+                <a className="projectLink" href={project.liveUrl} target="_blank" rel="noreferrer">
+                  View Live
+                  <FontAwesomeIcon icon={faArrowRight} />
+                </a>
+              )}
             </article>
           ))}
         </section>

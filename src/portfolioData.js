@@ -14,22 +14,38 @@ export const highlights = [
 
 export const projects = [
   {
-    title: "Portfolio Website",
-    type: "React",
+    title: "Rainwater Harvesting System",
+    type: "Ongoing Project",
     description:
-      "A personal portfolio built with React Router, responsive layouts, and reusable page sections.",
+      "A smart sustainability platform for collecting rainwater, monitoring water quality, and tracking energy usage through a dashboard.",
   },
   {
-    title: "Task Tracker",
-    type: "Frontend App",
+    title: "GitHub Card Generator",
+    type: "Deployed App",
     description:
-      "A productivity interface for organizing work, tracking progress, and keeping priorities visible.",
+      "A Vercel-deployed web app for presenting GitHub information in a clean card-style interface.",
+    liveUrl: "https://github-card-seven-steel.vercel.app/",
   },
   {
-    title: "Course Tools",
-    type: "Student Utilities",
+    title: "Wind & Temperature Converter",
+    type: "Deployed App",
     description:
-      "Small applications and experiments created while practicing JavaScript, component design, and UI structure.",
+      "A Vercel-deployed converter for quickly working with wind and temperature values in the browser.",
+    liveUrl: "https://convert-wind-temp.vercel.app/",
+  },
+  {
+    title: "Temperature Converter",
+    type: "Deployed App",
+    description:
+      "A browser-based temperature conversion app deployed on Vercel for quick unit calculations.",
+    liveUrl: "https://temp-converter-rouge.vercel.app/",
+  },
+  {
+    title: "Weather App",
+    type: "Deployed App",
+    description:
+      "A React weather application deployed on Vercel for checking current weather details in the browser.",
+    liveUrl: "https://weather-app-react-alpha-three.vercel.app/",
   },
 ];
 

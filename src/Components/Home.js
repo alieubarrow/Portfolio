@@ -86,6 +86,12 @@ export default function Home() {
                 <span>{project.type}</span>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
+                {project.liveUrl && (
+                  <a className="projectLink" href={project.liveUrl} target="_blank" rel="noreferrer">
+                    View Live
+                    <FontAwesomeIcon icon={faArrowRight} />
+                  </a>
+                )}
               </article>
             ))}
           </div>
