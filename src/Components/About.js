@@ -25,7 +25,7 @@ export default function About() {
           <p className="eyebrow">About</p>
           <h1 className="pageTitle">Developer in progress, builder by habit.</h1>
           <p className="pageCopy">
-            I am a computer science student developing my craft through React
+            I am a computer science student developing my craft through personal
             projects, coursework, and steady practice. I care about writing code
             that makes interfaces easier to understand and easier to use.
           </p>

@@ -241,6 +241,12 @@ body {
   color: #ffffff;
 }
 
+.viewMoreProjects {
+  display: flex;
+  justify-content: center;
+  margin-top: 26px;
+}
+
 .twoColumn {
   display: grid;
   gap: 46px;

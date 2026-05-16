@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import "../Styles/PortfolioStyle.css";
-import { navItems, skills } from "../portfolioData";
+import { navItems, skillCategories } from "../portfolioData";
 
 export default function Skills() {
   return (
@@ -22,18 +22,25 @@ export default function Skills() {
       <main className="pageMain">
         <section className="pageIntro">
           <p className="eyebrow">Skills</p>
-          <h1 className="pageTitle">A practical web development toolkit.</h1>
+          <h1 className="pageTitle">A practical software development toolkit.</h1>
           <p className="pageCopy">
             These are the tools and habits I am using to build clearer,
-            responsive, and more maintainable web applications.
+            responsive, and more maintainable software applications.
           </p>
         </section>
 
-        <ul className="skillList">
-          {skills.map((skill) => (
-            <li key={skill}>{skill}</li>
+        <section className="skillsGrid" aria-label="Technical skills">
+          {skillCategories.map((category) => (
+            <article className="skillCard" key={category.title}>
+              <h2>{category.title}</h2>
+              <ul className="skillList">
+                {category.items.map((skill) => (
+                  <li key={skill}>{skill}</li>
+                ))}
+              </ul>
+            </article>
           ))}
-        </ul>
+        </section>
       </main>
     </div>
   );

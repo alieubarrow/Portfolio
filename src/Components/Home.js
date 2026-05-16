@@ -12,6 +12,8 @@ import { Link, NavLink } from "react-router-dom";
 import { experience, highlights, navItems, projects, skills } from "../portfolioData";
 
 export default function Home() {
+  const featuredProjects = projects.slice(0, 6);
+
   return (
     <div className="Home">
       <header className="homeHeader">
@@ -81,7 +83,7 @@ export default function Home() {
             <h2>Recent Work</h2>
           </div>
           <div className="projectGrid">
-            {projects.map((project) => (
+            {featuredProjects.map((project) => (
               <article className="projectTile" key={project.title}>
                 <span>{project.type}</span>
                 <h3>{project.title}</h3>
@@ -94,6 +96,12 @@ export default function Home() {
                 )}
               </article>
             ))}
+          </div>
+          <div className="viewMoreProjects">
+            <Link className="projectLink" to="/projects">
+              View more projects
+              <FontAwesomeIcon icon={faArrowRight} />
+            </Link>
           </div>
         </section>
 

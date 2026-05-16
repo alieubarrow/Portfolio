@@ -138,6 +138,24 @@
   color: #ffffff;
 }
 
+.skillsGrid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.skillCard {
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.skillCard h2 {
+  font-size: 20px;
+  margin: 0 0 16px;
+}
+
 .skillList {
   display: flex;
   flex-wrap: wrap;
@@ -187,6 +205,7 @@
   }
 
   .sectionGrid,
+  .skillsGrid,
   .contactPanel {
     grid-template-columns: 1fr;
   }

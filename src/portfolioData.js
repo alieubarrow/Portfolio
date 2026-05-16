@@ -41,6 +41,20 @@ export const projects = [
     liveUrl: "https://temp-converter-rouge.vercel.app/",
   },
   {
+    title: "Decibel Calculator",
+    type: "Deployed App",
+    description:
+      "A deployed web app for working with decibel values in the browser.",
+    liveUrl: "https://decibel11.netlify.app/",
+  },
+  {
+    title: "Sudoku",
+    type: "Deployed App",
+    description:
+      "A deployed Sudoku game for practicing logic and puzzle solving in the browser.",
+    liveUrl: "https://sudoku11.netlify.app/",
+  },
+  {
     title: "Weather App",
     type: "Deployed App",
     description:
@@ -50,14 +64,46 @@ export const projects = [
 ];
 
 export const skills = [
+  "Python",
+  "Java",
+  "C/C++",
+  "C#",
   "JavaScript",
   "React",
+  "Spring Boot",
+  "Express.js",
   "HTML",
   "CSS",
-  "React Router",
   "Git",
-  "Problem Solving",
-  "Responsive Design",
+  "GitHub",
+  "SQL",
+];
+
+export const skillCategories = [
+  {
+    title: "Languages",
+    items: ["Python", "Java", "C/C++", "C#"],
+  },
+  {
+    title: "Tools",
+    items: ["Git", "GitHub"],
+  },
+  {
+    title: "Frameworks",
+    items: ["React", "Spring Boot", "Express.js"],
+  },
+  {
+    title: "Web",
+    items: ["JavaScript", "HTML", "CSS"],
+  },
+  {
+    title: "Database",
+    items: ["SQL"],
+  },
+  {
+    title: "Operating Systems",
+    items: ["Windows", "Linux", "macOS"],
+  },
 ];
 
 export const experience = [
