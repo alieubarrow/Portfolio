@@ -17,48 +17,48 @@ export const projects = [
     title: "Rainwater Harvesting System",
     type: "Ongoing Project",
     description:
-      "A smart sustainability platform for collecting rainwater, monitoring water quality, and tracking energy usage through a dashboard.",
+      "A smart sustainability platform that collects rainwater, monitors water quality, and tracks energy usage through an integrated dashboard.",
   },
   {
     title: "GitHub Card Generator",
     type: "Deployed App",
     description:
-      "A Vercel-deployed web app for presenting GitHub information in a clean card-style interface.",
+      "A web application for presenting GitHub information in a clean card style interface.",
     liveUrl: "https://github-card-seven-steel.vercel.app/",
   },
   {
     title: "Wind & Temperature Converter",
     type: "Deployed App",
     description:
-      "A Vercel-deployed converter for quickly working with wind and temperature values in the browser.",
+      "A lightweight web application for real time wind and temperature value conversion.",
     liveUrl: "https://convert-wind-temp.vercel.app/",
   },
   {
     title: "Temperature Converter",
     type: "Deployed App",
     description:
-      "A browser-based temperature conversion app deployed on Vercel for quick unit calculations.",
+      "A lightweight web application for quick temperature unit calculations.",
     liveUrl: "https://temp-converter-rouge.vercel.app/",
   },
   {
     title: "Decibel Calculator",
     type: "Deployed App",
     description:
-      "A deployed web app for working with decibel values in the browser.",
+      "A web application for calculating decibel values in the browser.",
     liveUrl: "https://decibel11.netlify.app/",
   },
   {
     title: "Sudoku",
     type: "Deployed App",
     description:
-      "A deployed Sudoku game for practicing logic and puzzle solving in the browser.",
+      "A Sudoku game for practicing logic and puzzle solving in the browser.",
     liveUrl: "https://sudoku11.netlify.app/",
   },
   {
     title: "Weather App",
     type: "Deployed App",
     description:
-      "A React weather application deployed on Vercel for checking current weather details in the browser.",
+      "A weather application for checking current weather details in the browser.",
     liveUrl: "https://weather-app-react-alpha-three.vercel.app/",
   },
 ];
@@ -69,11 +69,11 @@ export const skills = [
   "C/C++",
   "C#",
   "JavaScript",
+  "HTML",
+  "CSS",
   "React",
   "Spring Boot",
   "Express.js",
-  "HTML",
-  "CSS",
   "Git",
   "GitHub",
   "SQL",
