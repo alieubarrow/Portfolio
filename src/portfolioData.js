@@ -61,6 +61,13 @@ export const projects = [
       "A weather application for checking current weather details in the browser.",
     liveUrl: "https://weather-app-react-alpha-three.vercel.app/",
   },
+  {
+    title: "Investment Calculator",
+    type: "Deployed App",
+    description:
+      "A web application for calculating investment growth and projected returns.",
+    liveUrl: "https://investment-calculator-phi-six.vercel.app/",
+  },
 ];
 
 export const skills = [
