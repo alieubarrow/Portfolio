@@ -14,12 +14,6 @@ export const highlights = [
 
 export const projects = [
   {
-    title: "Rainwater Harvesting System",
-    type: "Ongoing Project",
-    description:
-      "A smart sustainability platform that collects rainwater, monitors water quality, and tracks energy usage through an integrated dashboard.",
-  },
-  {
     title: "GitHub Card Generator",
     type: "Deployed App",
     description:

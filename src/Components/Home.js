@@ -8,6 +8,7 @@ import {
   faEnvelope,
   faUserGraduate,
 } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 import { experience, highlights, navItems, projects, skills } from "../portfolioData";
 
@@ -145,6 +146,21 @@ export default function Home() {
           </Link>
         </section>
       </main>
+      <footer className="homeFooter">
+        <a href="https://github.com/alieubarrow" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+          <FontAwesomeIcon icon={faGithub} />
+          <span>GitHub</span>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/alieu-barrow-99a509179/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="LinkedIn profile"
+        >
+          <FontAwesomeIcon icon={faLinkedin} />
+          <span>LinkedIn</span>
+        </a>
+      </footer>
     </div>
   );
 }

@@ -304,6 +304,37 @@ body {
   justify-content: space-between;
 }
 
+.homeFooter {
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 28px 24px 38px;
+}
+
+.homeFooter a {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  color: #f4f7fb;
+  display: inline-flex;
+  font-weight: 800;
+  gap: 10px;
+  min-height: 44px;
+  padding: 0 16px;
+  text-decoration: none;
+}
+
+.homeFooter a:hover {
+  background-color: rgba(104, 216, 189, 0.14);
+  border-color: rgba(104, 216, 189, 0.36);
+  color: #68d8bd;
+}
+
 @media (max-width: 900px) {
   .homeHeader,
   .contactBanner {
